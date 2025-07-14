@@ -1,0 +1,4 @@
+python==3.10.0
+torch==2.7.1+cull8
+tqdm==4.67.1
+matplotlib==3.10.3
