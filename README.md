@@ -10,5 +10,6 @@
 
 ---
 ## enviroment preparation
+[enviroments](https://github.com/jhz6353/segmentation-algorithms/edit/main/requirements.txt)
 
 ---
