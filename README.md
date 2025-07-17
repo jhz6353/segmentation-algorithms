@@ -19,14 +19,14 @@ we use VOC2012 to train our model
 [data download](https://github.com/dataset-ninja/pascal-voc-2012/blob/main/DOWNLOAD.md)
 ### recommended data file structure
 --your working directory<br/>
-  --dataset
-    --VOC2012
-      --Annotations
-      --ImageSets
-      --JPEGImages
-      --SegmentationClass
-      --SegmentationObject
-  --other python files
+  --dataset  
+    --VOC2012  
+      --Annotations  
+      --ImageSets  
+      --JPEGImages  
+      --SegmentationClass  
+      --SegmentationObject  
+  --other python files  
 
 ---
 ## usage
