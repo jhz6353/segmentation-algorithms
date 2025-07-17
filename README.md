@@ -14,10 +14,23 @@
 
 ---
 ## data preparation
+### dataset
 we use VOC2012 to train our model
 [data download](https://github.com/dataset-ninja/pascal-voc-2012/blob/main/DOWNLOAD.md)
+### recommended data file structure
+--your working directory
+  --dataset
+    --VOC2012
+      --Annotations
+      --ImageSets
+      --JPEGImages
+      --SegmentationClass
+      --SegmentationObject
+  --other python files
 
 ---
 ## usage
 ### train
-`CUDA_VISIBLE_DEVICES=0 python train.py --epoches 50 --batch_size 4 --datapath "dataset/VOC2012"`
+`python train.py --epoches 50 --batch_size 4 --datapath "dataset/VOC2012"`
+### predict
+`python test.py --img_path "dataset/VOC2012/JPEGImages/2007_000027.jpg" --output_save_path "output"`
