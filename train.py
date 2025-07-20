@@ -27,7 +27,7 @@ def decode_segmap(segmap):
     rgb_img = np.zeros((segmap.shape[0], segmap.shape[1], 3),dtype=np.uint8)
     for class_idx,color in enumerate(VOC_COLORMAP):
         flag= segmap==class_idx
-        if any(flag):
+        if flag.any():
             rgb_img[flag]=color
     return rgb_img
 
@@ -57,7 +57,7 @@ class Trainer(object):
         start_epoch=0
         if self.resume is not None:
             if os.path.isfile(self.resume):
-                checkpoint = torch.load(self.resume)
+                checkpoint = torch.load(self.resume,weights_only=False)
                 start_epoch = checkpoint['epoch']
                 best_miou=checkpoint['best_miou']
                 self.model.load_state_dict(checkpoint['model_state_dict'])
