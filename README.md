@@ -2,10 +2,10 @@
 
 ---
 ## models
-### FCN U-net
+### FCN8s FCN16s U-net
 
 ---
-## hame page
+## home page
 [github home page](https://github.com/dashboard)
 
 ---
@@ -25,12 +25,19 @@ we use VOC2012 to train our model
       - ImageSets  
       - JPEGImages  
       - SegmentationClass  
-      - SegmentationObject  
-  - other python files  
+      - SegmentationObject
+  - output
+  - model.py
+  - dataloader.py
+  - train.py
+  - test.py
+  - other files
 
 ---
 ## usage
-### train
-`python train.py --epoches 50 --batch_size 4 --datapath "dataset/VOC2012"`
+### train from scratch
+`python train.py --epoches 50 --batch_size 4 --datapath "dataset/VOC2012" --resume False`
+### train from resume
+`python train.py --epoches 50 --batch_size 4 --datapath "dataset/VOC2012" --resume FCN_8s/last_madel.pth`
 ### predict
-`python test.py --img_path "dataset/VOC2012/JPEGImages/2007_000027.jpg" --output_save_path "output"`
+`python test.py --img_path your image path --output_save_path "output"`
