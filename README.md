@@ -5,7 +5,8 @@
 ### FCN8s FCN16s U-net
 
 ## examples
-![plane](output/2007_000256.jpg)
+![1](output/2007_000256.jpg)
+![2](output/2007_000392.jpg)
 
 ---
 ## home page
