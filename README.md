@@ -1,7 +1,7 @@
 # some inplementation of segmentation algorithms
 
 ---
-## models
+## model comparison
 | models | FCN8s | FCN32s | U-net | DeepLabV1 | DeeplabV2 |
 | :----: | :---: | :----: | :---: | :-------: | :-------: |
 | backbone | vgg16 | vgg16 | none | vgg16 | resnet50 |
@@ -42,7 +42,6 @@ we use VOC2012 to train our model
   - other files
 
 ---
-### usage
 #### train from scratch
 `python train.py --epoches 50 --batch_size 4 --datapath "dataset/VOC2012" --resume False`
 #### train from resume
