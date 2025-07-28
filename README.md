@@ -2,7 +2,10 @@
 
 ---
 ## models
-### |FCN8s |FCN16s |U-net |DeepLabV1 |DeeplabV2 |
+| models | FCN8s | FCN32s | U-net | DeepLabV1 | DeeplabV2 |
+| :----: | :---: | :----: | :---: | :-------: | :-------: |
+| backbone | vgg16 | vgg16 | none | vgg16 | resnet50 |
+| parameters | 136M | 138M | 31M-2M | 136M | 44.5M |
 
 ## examples
 ![1](output/2007_000733.jpg)
